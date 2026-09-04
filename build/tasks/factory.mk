@@ -3,10 +3,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifneq ($(filter radxa0 radxa0_car radxa0_tab,$(TARGET_DEVICE)),)
+ifneq ($(filter x96x9 x96x9_car x96x9_tab,$(TARGET_DEVICE)),)
 
-FACTORY_PATH := device/radxa/radxa0/factory
-VENDOR_PATH := vendor/radxa/radxa0
+FACTORY_PATH := device/amediatech/x96x9/factory
+VENDOR_PATH := vendor/amediatech/x96x9
 
 PRODUCT_INSTALL_OUT := $(PRODUCT_OUT)/aml_install
 PRODUCT_UPGRADE_OUT := $(PRODUCT_OUT)/aml_upgrade

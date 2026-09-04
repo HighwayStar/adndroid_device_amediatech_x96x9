@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 runtime_resource_overlay {
-    name: "RadxaZeroBluetoothOverlay",
+    name: "X96X9BluetoothOverlay",
     resource_dirs: ["res"],
     sdk_version: "current",
     proprietary: true

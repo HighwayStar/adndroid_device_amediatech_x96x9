@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_radxa0.mk
+    $(LOCAL_DIR)/lineage_x96x9.mk

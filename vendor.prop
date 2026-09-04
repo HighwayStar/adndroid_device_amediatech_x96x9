@@ -1,5 +1,5 @@
 ## Bluetooth
-bluetooth.device.default_name=Radxa Zero
+bluetooth.device.default_name=X96 X9
 bluetooth.profile.hfp.ag.enabled=false
 bluetooth.profile.opp.enabled=false
 bluetooth.profile.pbap.server.enabled=false
@@ -9,7 +9,7 @@ ro.vendor.platform.support.dolbyvision=false
 vendor.media.support.dolbyvision=false
 
 ## SOC
-ro.soc.model=AMLS905Y2
+ro.soc.model=AMLS922
 
 ## Wi-Fi
 vendor.bcm_wifi=bcm

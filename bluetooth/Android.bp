@@ -1,4 +1,4 @@
 filegroup {
-    name: "vnd_radxa0.txt",
-    srcs: ["vnd_radxa0.txt"],
+    name: "vnd_x96x9.txt",
+    srcs: ["vnd_x96x9.txt"],
 }

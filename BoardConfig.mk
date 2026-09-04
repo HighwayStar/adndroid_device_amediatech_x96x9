@@ -3,16 +3,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/radxa/radxa0
+DEVICE_PATH := device/amediatech/x96x9
 
 ## Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := radxa0
+TARGET_BOOTLOADER_BOARD_NAME := x96x9
 
 ## DTB
-TARGET_DTB_NAME := g12a_s905y2_radxa0
+TARGET_DTB_NAME := g12b_a311d_w200_x96x9
 
 ## Kernel modules
 TARGET_KERNEL_EXT_MODULES := \
@@ -37,4 +37,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 include device/amlogic/g12-common/BoardConfigCommon.mk
 
 ## Include the proprietary BoardConfig makefile
-include vendor/radxa/radxa0/BoardConfigVendor.mk
+include vendor/amediatech/x96x9/BoardConfigVendor.mk
