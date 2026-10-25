@@ -19,6 +19,13 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.amlogic.wifi_buildin.rc
 
+## OpenVFD
+PRODUCT_SOURCE_ROOT_DIRS += kernel/platform/kernel-5.15/vendor/amlogic/openvfd
+
+PRODUCT_PACKAGES += \
+    init.openvfd.rc \
+    OpenVFDService
+
 ## Keylayout (IR)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl

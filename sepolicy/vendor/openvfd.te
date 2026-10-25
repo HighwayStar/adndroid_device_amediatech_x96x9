@@ -1,0 +1,13 @@
+type openvfd, domain;
+type openvfd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(openvfd)
+
+allow openvfd openvfd_device:chr_file rw_file_perms;
+
+allow openvfd sysfs_leds:dir search;
+allow openvfd sysfs_leds:lnk_file read;
+allow openvfd sysfs_leds:file w_file_perms;
+
+# getifaddrs() for the eth/wifi icons
+allow openvfd self:netlink_route_socket { create_socket_perms_no_ioctl nlmsg_read nlmsg_readpriv };

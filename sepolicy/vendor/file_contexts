@@ -1,0 +1,3 @@
+/dev/openvfd                    u:object_r:openvfd_device:s0
+
+/vendor/bin/OpenVFDService      u:object_r:openvfd_exec:s0

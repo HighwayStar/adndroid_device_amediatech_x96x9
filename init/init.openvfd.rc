@@ -1,0 +1,13 @@
+on boot
+    insmod /vendor/lib/modules/openvfd.ko
+    wait /dev/openvfd
+    chown system system /dev/openvfd
+    chown system system /sys/class/leds/openvfd/led_on
+    chown system system /sys/class/leds/openvfd/led_off
+    start openvfd
+
+service openvfd /vendor/bin/OpenVFDService -si
+    class main
+    user system
+    group system
+    disabled
