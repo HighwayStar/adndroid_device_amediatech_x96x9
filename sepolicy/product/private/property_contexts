@@ -1,0 +1,4 @@
+persist.sys.openvfd.enable       u:object_r:openvfd_prop:s0 exact bool
+persist.sys.openvfd.clock_12h    u:object_r:openvfd_prop:s0 exact bool
+persist.sys.openvfd.icons        u:object_r:openvfd_prop:s0 exact bool
+persist.sys.openvfd.brightness   u:object_r:openvfd_prop:s0 exact int

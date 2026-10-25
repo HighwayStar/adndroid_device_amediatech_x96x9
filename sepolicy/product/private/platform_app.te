@@ -1,0 +1,2 @@
+# OpenVfdSettings
+set_prop(platform_app, openvfd_prop)

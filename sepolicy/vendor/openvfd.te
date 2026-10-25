@@ -11,3 +11,8 @@ allow openvfd sysfs_leds:file w_file_perms;
 
 # getifaddrs() for the eth/wifi icons
 allow openvfd self:netlink_route_socket { create_socket_perms_no_ioctl nlmsg_read nlmsg_readpriv };
+
+get_prop(openvfd, openvfd_prop)
+
+# The service's command FIFO in /tmp is unused on Android
+dontaudit openvfd shell_data_file:dir search;

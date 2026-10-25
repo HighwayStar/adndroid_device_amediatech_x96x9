@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.lineageos.openvfd.settings">
+
+    <application android:label="@string/vfd_title">
+
+        <!-- Rendered by TvSettings via its SliceFragment; the entry row is
+             added to Advanced display settings by TvSettingsOpenVfdOverlay. -->
+        <provider
+            android:name=".VfdSliceProvider"
+            android:authorities="org.lineageos.openvfd.settings"
+            android:exported="true"
+            android:grantUriPermissions="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.app.slice.category.SLICE"/>
+            </intent-filter>
+        </provider>
+
+        <receiver
+            android:name=".VfdBroadcastReceiver"
+            android:exported="false"/>
+    </application>
+</manifest>

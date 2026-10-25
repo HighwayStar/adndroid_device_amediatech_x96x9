@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vfd_title">Дисплей на передней панели</string>
+
+    <string name="vfd_enable_title">Дисплей</string>
+    <string name="vfd_enable_summary">Показывать часы на передней панели</string>
+    <string name="vfd_clock_12h_title">12-часовой формат</string>
+    <string name="vfd_clock_12h_summary">Показывать 1:00 вместо 13:00</string>
+    <string name="vfd_icons_title">Значки состояния</string>
+    <string name="vfd_icons_summary">Индикаторы питания, Ethernet и Wi-Fi</string>
+    <string name="vfd_brightness_title">Яркость</string>
+</resources>

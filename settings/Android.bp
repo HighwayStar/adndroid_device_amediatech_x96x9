@@ -1,0 +1,37 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Front panel (OpenVFD) settings for TvSettings, in the shape of
+// device/rockchip/rk35xx-common/settings: a slice provider rendered by the
+// two-panel TvSettings, and an RRO that adds its entry row. The app only
+// writes persist.sys.openvfd.*; OpenVFDService picks them up on its next
+// tick.
+android_app {
+    name: "OpenVfdSettings",
+    manifest: "OpenVfdSettings/AndroidManifest.xml",
+    srcs: ["OpenVfdSettings/src/**/*.java"],
+    resource_dirs: ["OpenVfdSettings/res"],
+    platform_apis: true,
+    certificate: "platform",
+    system_ext_specific: true,
+    static_libs: [
+        "TvSliceLib",
+        // TvSliceLib defers style/attr resolution to the consuming app.
+        "androidx.leanback_leanback-preference",
+        "com.google.android.material_material",
+    ],
+    optimize: {
+        enabled: false,
+    },
+}
+
+runtime_resource_overlay {
+    name: "TvSettingsOpenVfdOverlay",
+    manifest: "TvSettingsOpenVfdOverlay/AndroidManifest.xml",
+    resource_dirs: ["TvSettingsOpenVfdOverlay/res"],
+    certificate: "platform",
+    product_specific: true,
+    sdk_version: "current",
+}

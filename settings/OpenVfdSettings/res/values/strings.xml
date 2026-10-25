@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vfd_title">Front panel display</string>
+
+    <string name="vfd_enable_title">Display</string>
+    <string name="vfd_enable_summary">Show the clock on the front panel</string>
+    <string name="vfd_clock_12h_title">12-hour clock</string>
+    <string name="vfd_clock_12h_summary">Show 1:00 instead of 13:00</string>
+    <string name="vfd_icons_title">Status icons</string>
+    <string name="vfd_icons_summary">Power, Ethernet and Wi-Fi indicators</string>
+    <string name="vfd_brightness_title">Brightness</string>
+</resources>
